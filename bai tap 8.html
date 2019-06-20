@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhaptuoi = prompt("nhap so tuoi ban muon chon ");
+    if (0 < nhaptuoi < 120) {
+        if ((nhaptuoi - Math.round(nhaptuoi)) === 0) {
+            alert(nhaptuoi + " là tuổi của một người")
+        }
+        alert(nhaptuoi + " ko là tuổi của một người")
+    } else {
+        alert("vui long nhap so khac");
+    }
+
+</script>
+</body>
+</html>

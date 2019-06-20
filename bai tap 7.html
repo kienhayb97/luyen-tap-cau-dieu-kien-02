@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("nhap bien a "));
+    let b=parseInt(prompt("nhap bien b "));
+    let c=parseInt(prompt("nhap bien c "));
+    let denta=(b*b)-(4*a*c);
+    let nhiem1=-(b/2*a);
+    let candenta=Math.sqrt(denta)
+    let nhiemx1=-((b+candenta)/(2*a));
+    let nhiemx2=-((b-candenta)/(2*a));
+    let db1=a+b+c;
+    let db2=a-b+c;
+    if (denta<0){
+        alert("phuong trinh vo nhiem")
+    }
+    else if (denta=0){
+        alert("phuong trinh co 1 nhiem kep x1=x2="+(nhiem1))
+    }
+    else if (db1=0){
+        alert("phuong trinh co 2 nhiem la x1=1"+"\n"+"x2="+(c/a))
+    }
+    else if (db2=0){
+        alert("phuong trinh co 2 nhiem la x1=-1"+"\n"+"x2="+(-c/a))
+    }
+    else {
+        alert("phuong trinh co 2 nhiem la x1="+nhiemx1 +"\n"+"x2="+nhiemx2)
+    }
+</script>
+
+</body>
+</html>
